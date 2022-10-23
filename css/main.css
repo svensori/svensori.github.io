@@ -668,10 +668,6 @@ video {
   background-image: url('../img/bg-3.webp');
 }
 
-.bg-\[url\(\'\.\.\/img\/bg-2\.webp\'\)\] {
-  background-image: url('../img/bg-2.webp');
-}
-
 .bg-comic-2 {
   background-image: url('../img/bg-2.webp');
 }
