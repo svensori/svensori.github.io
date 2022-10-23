@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@base {
+  html {
+    font-family: "Bangers", cursive;
+    font-family: "Comic Neue", cursive;
+    height: 100%;
+  }
+}
+
+body {
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+body > div.container {
+  margin: auto;
+  padding: 40px 16px 48px 16px;
+  border: solid black 2px;
+}
+
+header {
+  z-index: 50;
+  padding: 0;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+header > h1 {
+  font-family: "Bangers";
+  font-size: 30px;
+  line-height: 36px;
+}
+
+header > p {
+  font-family: "Comic Neue";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+article {
+  position: relative;
+  border: solid black 2px;
+  background-size: cover;
+  overflow: hidden;
+}
+
+article > h2 {
+  font-family: "Bangers";
+  width: fit-content;
+  border: solid black 2px;
+  border-left: 0;
+  border-top: 0;
+  background-color: white;
+  margin-left: -8px;
+  padding: 4px 12px 4px 20px;
+  font-size: 30px;
+  line-height: 36px;
+  transform: skewX(-17deg);
+}
+
+p.balloon {
+  width: 100%;
+  position: relative;
+  padding: 12px;
+  margin: 12px;
+  display: inline-block;
+  border-radius: 8px;
+  border: solid black 2px;
+  font-size: 18px;
+  line-height: 28px;
+  background-color: white;
+  font-family: "Comic Neue";
+  font-weight: 600;
+}
+
+p.balloon::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: -40px;
+  border-color: transparent;
+  border-left-color: black;
+  border-width: 20px;
+  margin: auto 0;
+  top: 30%;
+  transform: translateY(-50%);
+}
+
+p.balloon::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: -38px;
+  border-color: transparent;
+  border-left-color: white;
+  border-width: 20px;
+  margin: auto 0;
+  top: 30%;
+  transform: translateY(-50%);
+}
+
+img.avatar {
+  border: solid black 2px;
+  margin: 0 auto;
+  transform: translateY(-24px) translateX(12px) scale(1.5) skewX(-3deg)
+    skewY(3deg);
+}
+
+a {
+  font-family: "Bangers";
+  padding: 12px;
+  font-size: 20px;
+  line-height: 28px;
+  color: white;
+  letter-spacing: 2px;
+  border: solid black 2px;
+  transform: skewX(-1deg) skewY(-1deg);
+  display: inline-block;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+a:hover {
+  transform: scale(1.25);
+}

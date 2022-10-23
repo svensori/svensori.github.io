@@ -1,0 +1,19 @@
+{
+  "name": "svensori",
+  "version": "1.0.0",
+  "description": "Portfolio page of Steven Soriano",
+  "main": "index.js",
+  "scripts": {
+    "build:tw": "npx tailwindcss -i ./input.css -o ./css/main.css --watch",
+    "optimize:img": "node optimize-images.js"
+  },
+  "author": "Steven Soriano",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.1"
+  },
+  "dependencies": {
+    "imagemin": "^8.0.1",
+    "imagemin-webp": "^7.0.0"
+  }
+}
