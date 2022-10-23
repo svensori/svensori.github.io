@@ -844,8 +844,8 @@ article > h2 {
   border-left: 0;
   border-top: 0;
   background-color: white;
-  margin-left: -8px;
-  padding: 4px 12px 4px 20px;
+  margin-left: -20px;
+  padding: 4px 15px 4px 30px;
   font-size: 30px;
   line-height: 36px;
   transform: skewX(-17deg);
