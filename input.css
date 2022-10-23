@@ -143,8 +143,8 @@ img {
 
 img.avatar {
   margin: 0 auto;
-  transform: translateY(-24px) translateX(12px) scale(1.5) skewX(-3deg)
-    skewY(3deg);
+  transform: scale(0.9);
+  border-radius: 9999px;
 }
 
 a {
