@@ -182,8 +182,8 @@ figure > figcaption {
 ul > li {
   font-family: "Bangers";
   padding: 4px;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 30px;
+  line-height: 36px;
   color: white;
   display: inline-block;
   transition-property: transform;
