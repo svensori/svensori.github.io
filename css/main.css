@@ -2330,7 +2330,7 @@ body {
   align-items: center;
 }
 
-body > div {
+body > div.container {
   margin: auto;
   padding: 40px 16px 48px 16px;
   border: solid black 2px;
